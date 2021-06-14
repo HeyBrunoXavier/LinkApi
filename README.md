@@ -4,6 +4,9 @@
 
 Essa api foi projetada para um cadastro de pedidos, onde o intuito é cadastrar e listar os pedidos através de uma integração com as plataformas Bling e Pipedrive.
 
+- Bling - www.bling.com.br
+- Pipedrive - www.pipedrive.com
+
 ## Tecnologias utilizadas
 
 - Node.JS(Javascript) - Doc https://nodejs.org/pt-br/docs/
