@@ -1,0 +1,100 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Orders Create",
+    "description": "API Desenvolvida para o teste de Desenvolvedor Back-end para LinkApi.\n Linkedin: https://www.linkedin.com/in/bruno-xavier-48a038167/\n",
+    "contact":{
+      "email": "brunoxavier5230@gmail.com"
+    },
+    "externalDocs": {
+      "description": "Coleção do Postman",
+      "url": ""
+    }
+  },
+  "host": "localhost:3000",
+  "basePath": "/",
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/v1/orders/": {
+      "get": {
+        "summary": "Listagem de pedidos",
+        "tags": [],
+        "description": "Lista os pedidos cadastrados",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Operação realizada com sucesso",
+            "schema": {
+              "$ref": "#/definitions/orders"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      }
+    },
+    "/v1/orders": {
+      "post": {
+        "summary": "Criação de pedidos",
+        "tags": [],
+        "description": "Criar pedidos",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "orders",
+            "in": "body",
+            "type": "string",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/orders"
+            }
+          }
+          
+        ],
+        "responses": {
+          "200": {
+            "description": "Operação realizada com sucesso",
+            "schema": {
+              "$ref": "#/definitions/orders"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      }
+    },
+    "/v1/orders/cashflow": {
+      "get": {
+        "summary": "Listagem do valor total dos pedidos",
+        "tags": [],
+        "description": "Lista os pedidos mais o valor total",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Operação realizada com sucesso",
+            "schema": {
+              "$ref": "#/definitions/orders"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      }
+    }
+  }
+}

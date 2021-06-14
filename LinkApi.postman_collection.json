@@ -1,0 +1,76 @@
+{
+	"info": {
+		"_postman_id": "b861920f-d362-4114-87cf-c0b4efd04cdd",
+		"name": "LinkApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Listagem do valor total - 200",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/v1/orders/cashflow",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"v1",
+						"orders",
+						"cashflow"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Inserção de pedidos - 200",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/v1/pedidos?status=won",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"v1",
+						"pedidos"
+					],
+					"query": [
+						{
+							"key": "status",
+							"value": "won"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listagem de pedido - 200",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/v1/orders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"v1",
+						"orders"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
